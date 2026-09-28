@@ -1,0 +1,60 @@
+{
+  "lesion_type": "mass",
+  "image_size": 768,
+  "feature_stride": 8,
+  "anchor_sizes": [
+    24,
+    32,
+    48,
+    80
+  ],
+  "anchor_aspect_ratios": [
+    1.0
+  ],
+  "anchor_iou_positive": 0.5,
+  "anchor_iou_negative": 0.3,
+  "mask_min_fraction": 0.5,
+  "augment_flip_probability": 0.5,
+  "augment_rotation_degrees": 10.0,
+  "augment_scale_range": [
+    0.8,
+    1.25
+  ],
+  "augment_translate_fraction": 0.1,
+  "augment_gamma_range": [
+    0.75,
+    1.25
+  ],
+  "class_names": [
+    "benign",
+    "malignant"
+  ],
+  "class_fork_filters": 64,
+  "kernel_l2": 0.0001,
+  "norm": "group",
+  "group_norm_groups": 16,
+  "label_smoothing": 0.0,
+  "weight_decay_exclude": [
+    "bias",
+    "gamma",
+    "beta"
+  ],
+  "negative_ratio": 20,
+  "max_negatives": 2048,
+  "box_loss_weight": 1.0,
+  "class_loss_weight": 21.0,
+  "class_loss_weight_start": 1.0,
+  "class_loss_ramp_epochs": 5,
+  "batch_size": 4,
+  "epochs": 50,
+  "score_threshold": 0.05,
+  "inference_score_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "nms_threshold": 0.5,
+  "nms_containment": 0.5,
+  "stacker_score_threshold": 0.05,
+  "stacker_top_k": 100,
+  "best_epoch": 49,
+  "best_val_ap50": 0.5510445677914416,
+  "fingerprint": "090b6beb81b9"
+}

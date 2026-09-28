@@ -1,0 +1,81 @@
+{
+  "lesion_type": "mass",
+  "base_models": [
+    "cnn",
+    "faster_rcnn",
+    "yolo"
+  ],
+  "base_fingerprints": {
+    "cnn": {
+      "0": "090b6beb81b9",
+      "1": "090b6beb81b9",
+      "2": "090b6beb81b9",
+      "3": "090b6beb81b9",
+      "4": "090b6beb81b9"
+    },
+    "faster_rcnn": {
+      "0": "c3d5798de593",
+      "1": "c3d5798de593",
+      "2": "c3d5798de593",
+      "3": "c3d5798de593",
+      "4": "c3d5798de593"
+    },
+    "yolo": {
+      "0": "fd10e1fc65da",
+      "1": "fd10e1fc65da",
+      "2": "fd10e1fc65da",
+      "3": "fd10e1fc65da",
+      "4": "fd10e1fc65da"
+    }
+  },
+  "image_size": 768,
+  "feature_stride": 8,
+  "anchor_sizes": [
+    24,
+    32,
+    48,
+    80
+  ],
+  "anchor_aspect_ratios": [
+    1.0
+  ],
+  "anchor_iou_positive": 0.5,
+  "anchor_iou_negative": 0.3,
+  "mask_min_fraction": 0.5,
+  "class_names": [
+    "benign",
+    "malignant"
+  ],
+  "architecture": {
+    "filters": 64,
+    "stages": 2,
+    "head_filters": 32,
+    "kernel": 3,
+    "double": false,
+    "projection": true,
+    "anchor_width": true,
+    "class_stop_gradient": false,
+    "norm": "layer",
+    "objectness_prior": true,
+    "candidate_supervision": false
+  },
+  "kernel_l2": 0.0001,
+  "norm": "layer",
+  "group_norm_groups": 16,
+  "negative_ratio": 20,
+  "max_negatives": 2048,
+  "box_loss_weight": 1.0,
+  "class_loss_weight": 21.0,
+  "class_loss_weight_start": 1.0,
+  "class_loss_ramp_epochs": 5,
+  "batch_size": 8,
+  "epochs": 30,
+  "score_threshold": 0.05,
+  "inference_score_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "nms_threshold": 0.5,
+  "nms_containment": 0.5,
+  "best_epoch": 3,
+  "best_val_ap50": 0.616091713419206,
+  "fingerprint": "9696d61e25b0"
+}

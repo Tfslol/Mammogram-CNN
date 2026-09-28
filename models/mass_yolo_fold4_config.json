@@ -1,0 +1,27 @@
+{
+  "lesion_type": "mass",
+  "image_size": 768,
+  "class_names": [
+    "benign",
+    "malignant"
+  ],
+  "model": "yolo26s.pt",
+  "epochs": 50,
+  "batch_size": 12,
+  "optimizer": "AdamW",
+  "learning_rate": 0.002,
+  "weight_decay": 0.0005,
+  "cos_lr": true,
+  "patience": 15,
+  "augment_flip_probability": 0.5,
+  "augment_rotation_degrees": 10.0,
+  "score_threshold": 0.05,
+  "inference_score_threshold": 0.25,
+  "iou_threshold": 0.5,
+  "stacker_score_threshold": 0.05,
+  "stacker_top_k": 100,
+  "best_epoch": 40,
+  "best_val_ap50": 0.5828671265215803,
+  "fingerprint": "fd10e1fc65da",
+  "selection": "ultralytics best.pt by mAP50-95"
+}

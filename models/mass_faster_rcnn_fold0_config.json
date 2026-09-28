@@ -1,0 +1,37 @@
+{
+  "lesion_type": "mass",
+  "resize": 768,
+  "max_size": 768,
+  "class_names": [
+    "benign",
+    "malignant"
+  ],
+  "num_classes": 3,
+  "batch_size": 16,
+  "epochs": 50,
+  "learning_rate": 0.001,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "min_learning_rate": 5e-06,
+  "lr_patience": 4,
+  "lr_factor": 0.5,
+  "augment_flip_probability": 0.5,
+  "augment_rotation_degrees": 10.0,
+  "augment_scale_range": [
+    0.8,
+    1.25
+  ],
+  "augment_translate_fraction": 0.1,
+  "augment_gamma_range": [
+    0.75,
+    1.25
+  ],
+  "score_threshold": 0.05,
+  "inference_score_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "stacker_score_threshold": 0.05,
+  "stacker_top_k": 100,
+  "best_epoch": 37,
+  "best_val_ap50": 0.5560306753814895,
+  "fingerprint": "c3d5798de593"
+}

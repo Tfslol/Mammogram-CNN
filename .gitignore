@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+calc/
+*_workspace/
+runs/
+old/
+ralph/
+dataset/
+*.csv
+!*_metadata.csv
+*.pptx
+*.pdf
+*.docx
+
+yolo26s.pt
+
+prelim_report_template.md
+chosen_project_topic.md
+fyp*.md
+*_architecture.md
+
+*.tmp
